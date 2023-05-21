@@ -19,7 +19,7 @@ Build the desired kernel package by using:
 ```
 $ ./xbps-src -f -jX linuxX.X-xanmod linuxX.X-xanmod-headers
 ```
-# Compiling time will depend on how much CPU threads are being used, and obviously, CPU specs. You can modify the number of used threads by changing the ```-jX``` flag, replacing 'X' with the desired number.
+### Compiling time will depend on how much CPU threads are being used, and obviously, CPU specs. You can modify the number of used threads by changing the ```-jX``` flag, replacing 'X' with the desired number.
 
 Once built, the package will be available in `hostdir/binpkgs`. To install it:
 
