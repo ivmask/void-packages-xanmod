@@ -1,0 +1,11 @@
+--- a/scripts/setlocalversion	2022-10-21 16:32:47.000000000 -0300
++++ b/scripts/setlocalversion	2022-10-26 15:11:03.440338216 -0300
+@@ -123,7 +123,7 @@
+ 
+ # CONFIG_LOCALVERSION and LOCALVERSION (if set)
+ config_localversion=$(sed -n 's/^CONFIG_LOCALVERSION=\(.*\)$/\1/p' include/config/auto.conf)
+-res="${config_localversion}${LOCALVERSION}${res}"
++res="${res}${config_localversion}${LOCALVERSION}"
+ 
+ # scm version string if not at a tagged commit
+ if grep -q "^CONFIG_LOCALVERSION_AUTO=y$" include/config/auto.conf; then
